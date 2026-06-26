@@ -41,6 +41,7 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.btnCheck = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt1
@@ -232,22 +233,36 @@
             // lblStatus
             // 
             this.lblStatus.AccessibleName = "lblStatus";
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Font = new System.Drawing.Font("Anjoman Regular", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblStatus.Location = new System.Drawing.Point(29, 428);
+            this.lblStatus.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblStatus.Font = new System.Drawing.Font("Anjoman Regular", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblStatus.Location = new System.Drawing.Point(29, 413);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblStatus.Size = new System.Drawing.Size(297, 35);
+            this.lblStatus.Size = new System.Drawing.Size(435, 75);
             this.lblStatus.TabIndex = 13;
             this.lblStatus.Text = "متن نتیجه اینجا قرار خواهد گرفت.";
-            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl
+            // 
+            this.lbl.AccessibleName = "lbl";
+            this.lbl.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl.Font = new System.Drawing.Font("Anjoman Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl.Location = new System.Drawing.Point(29, 518);
+            this.lbl.Name = "lbl";
+            this.lbl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl.Size = new System.Drawing.Size(435, 37);
+            this.lbl.TabIndex = 14;
+            this.lbl.Text = "دانشجو: سهیل عباس نیا - استاد: جناب سنجری";
+            this.lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AccessibleName = "MagicSquareGame";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 496);
+            this.ClientSize = new System.Drawing.Size(493, 564);
+            this.Controls.Add(this.lbl);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.btnReset);
@@ -284,6 +299,7 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lbl;
     }
 }
 
